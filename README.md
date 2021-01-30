@@ -99,7 +99,7 @@ For some reason it is not detecting the columns of my table. It does get the inf
 
 "error":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'field list'" column exists
 
-It is connecting to my table correctly and I think the routes are also ok. I tried to do all the other elements without being able to test them, and to do that I used my code from the homework activity. As I was super stucked I check my own code and compared everything (my hw code works); and still can't see anything wrong.
+It is connecting to my table correctly and I think the routes are also ok. I tried to do all the other elements without being able to test them, and to do that I used my code from the homework activity. As I was super stucked I checked my own code and compared everything (my hw code works); and still can't see anything wrong.
 
 I looked up some solutions on google, and after trying some yarn upgrades and npm ungrades, it is still not working. I am sorry :(
 
