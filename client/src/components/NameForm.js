@@ -2,18 +2,18 @@ import React, { useState } from "react";
 //import "./NameForm.css";
 
 function NameForm(props) {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
+  const [firstname, setfirstName] = useState("");
+  const [lastname, setLastName] = useState("");
 
   function handleChange(event) {
     let { name, value } = event.target;
 
     switch (name) {
-      case "name":
-        setName(value);
+      case "firstname":
+        setfirstName(value);
         break;
-      case "surname":
-        setSurname(value);
+      case "lastname":
+        setLastName(value);
         break;
       default:
         break;
@@ -23,29 +23,35 @@ function NameForm(props) {
   function handleSubmit(event) {
     event.preventDefault();
 
-    props.onSubmit(name, surname);
+    props.onSubmit(firstname, lastname);
 
-    setName("");
-    setSurname("");
+    setfirstName("");
+    setLastName("");
   }
 
   return (
     <div className="NameForm">
       <h2>Register a student here:</h2>
+
       <form onSubmit={handleSubmit}>
         <label>
           Name
           <br></br>
-          <input name="name" type="text" value={name} onChange={handleChange} />
+          <input
+            name="firstname"
+            type="text"
+            value={firstname}
+            onChange={handleChange}
+          />
         </label>
 
         <label>
           Surname
           <br></br>
           <input
-            name="surname"
+            name="lastname"
             type="text"
-            value={surname}
+            value={lastname}
             onChange={handleChange}
           />
         </label>
