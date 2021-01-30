@@ -35,17 +35,17 @@ This assessment tests your understanding of building a full stack app using Reac
 
 Create a webpage with the following functionality:
 
-- [ ] A list of students.
-- [ ] A form to add new students. There should be fields to input the first and last names, separately.
+- [X ] A list of students.
+- [X ] A form to add new students. There should be fields to input the first and last names, separately.
   - After submitting the form, the new student should be added to the database and displayed on the page.
-- [ ] Each student can be deleted with a delete button. After clicking on this button, student should be deleted from the database and the updated list of students shown on the page
+- [X ] Each student can be deleted with a delete button. After clicking on this button, student should be deleted from the database and the updated list of students shown on the page
 - [ ] Style the app to make it look as polished as possible. Bootstrap is already loaded in the index.html file, so you can use it if you want to.
 - [ ] (Optional/bonus) Clicking on a student should show the student's profile to the right of the students list. The info to display this profile should be obtained from a fetch request to `/students/:id`
 
 To accomplish this, you will need to:
 
-- [ ] Finish the routes in the API server (`/routes/students.js`).
-- [ ] Finish the front end (`/client/src/`). Create as many components as you need.
+- [X ] Finish the routes in the API server (`/routes/students.js`).
+- [X ] Finish the front end (`/client/src/`). Create as many components as you need.
 
 ## Guidelines
 
@@ -81,10 +81,26 @@ Give yourself a grade for each question. Explain why you gave yourself that grad
 
 ### 1. API Endpoints & MySQL
 
-- Grade:
+- Grade: 2
 - Explanation:
 
 ### 2. Frontend
 
-- Grade:
-- Explanation:
+- Grade: 2
+- Explanation: I haven't had time to do any css, but I made the form and the display. Can't test them, explanation down here.
+
+I put a 2 on both of them because I haven't been able to test them. I have gone over my code several times and I think it's correct. I would very much like to know where my mistake is. Help!!
+
+I attached some screenshots that might be of use (on folder screenshots).
+
+The problem is on line 81 of the file routes/students.js.
+
+For some reason it is not detecting the columns of my table. It does get the information from App.js, and the values that I try to insert exist, and get there correctly. But this error keeps appearing:
+
+"error":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'field list'" column exists
+
+It is connecting to my table correctly and I think the routes are also ok. I tried to do all the other elements without being able to test them, and to do that I used my code from the homework activity. As I was super stucked I check my own code and compared everything (my hw code works); and still can't see anything wrong.
+
+I looked up some solutions on google, and after trying some yarn upgrades and npm ungrades, it is still not working. I am sorry :(
+
+Also, the RegisteredStudents.js component is commented to avoid clustered errors on the console log, but I believe the display is correct.

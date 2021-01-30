@@ -1,7 +1,7 @@
 import React from "react";
 
 function RegisteredStudents(props) {
-  console.log(JSON.stringify(props.students));
+  //console.log(JSON.stringify(props.students));
 
   return (
     <div className="RegisteredStudents">

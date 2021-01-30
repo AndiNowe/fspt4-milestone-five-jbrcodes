@@ -80,7 +80,7 @@ router.post("/facebook", async (req, res) => {
 
   let sql = `
     INSERT INTO students (firstname, lastname)
-    VALUES ('${name}', ${surname})
+    VALUES (${name}, ${surname})
   `;
 
   try {

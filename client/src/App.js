@@ -38,7 +38,7 @@ export default function App() {
       .then(result => result.json())
       .then(students => {
         //checking
-        console.log("addstudent" + JSON.stringify(students));
+        //console.log("addstudent" + JSON.stringify(students));
         setStudents(students);
       })
       .catch(err => {
