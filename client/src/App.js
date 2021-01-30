@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-
+import NameForm from "./components/NameForm";
 
 export default function App() {
   let [students, setStudents] = useState([]);
@@ -10,7 +10,7 @@ export default function App() {
   }, []);
 
   const getStudents = () => {
-    fetch('/students')
+    fetch("/students")
       .then(response => response.json())
       .then(students => {
         setStudents(students);
@@ -18,11 +18,12 @@ export default function App() {
       .catch(error => {
         console.log(error);
       });
-  }
+  };
 
   return (
     <div className="App">
       <h1>CodeOp's Facebook</h1>
+      <NameForm />
     </div>
   );
 }
